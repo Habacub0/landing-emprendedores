@@ -11,7 +11,9 @@ body {
   color: #0d1b2a;
   line-height: 1.6;
 }
-
+ span{
+  color: #ff5c39;
+}
 .site-header {
   background: #0d1b2a;
 }
