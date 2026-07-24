@@ -1,0 +1,19 @@
+@mixin contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@mixin movil {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin boton ($bg, $texto:#fff) {
+    display: inline-block;
+    background: $bg;
+    color: $texto;
+    padding: 12px 26px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 600;
+}

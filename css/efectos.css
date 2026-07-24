@@ -1,0 +1,125 @@
+@keyframes aparecer {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.titulo {
+  animation: aparecer 1.5s ease-in forwards;
+}
+@keyframes subir {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.subtitulo {
+  animation: subir 1.2s ease-out 0.5s forwards;
+  opacity: 0;
+}
+@keyframes pulso {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.btn {
+  animation: pulso 1.8s ease-in-out ;
+}
+.btn {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-3px);
+}
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+@keyframes entrar {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card { opacity: 0; animation: entrar 0.8s ease-out forwards; }
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+
+.cards { perspective: 1000px; }
+.card {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+.card:hover {
+  transform: rotateY(12deg);
+}
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #111111;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -4px;
+  width: 0; height: 5px;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(12px); }
+}
+.scroll-indicator {
+  display: flex;
+    justify-content: right;
+  animation: rebote 1.4s ease-in-out infinite;
+  font-size: 2rem;
+  color: #2563eb;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+.titulo-card {
+  position: relative;
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #020202;
+}
+
+.titulo-card::before {
+  content:"";
+  position: absolute;
+  top: 0; left: 0;
+  width: 0;
+  border-top: 4px solid #2563eb;
+  transition: width 0.3s ease;
+}
+
+.titulo-card:hover::before {
+  width: 100%;
+}
+.contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  
+}
