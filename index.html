@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprende · Recursos para Emprendedores</title>
+  <script type="module" crossorigin src="/landing-emprendedores2/assets/index-Bd3g1MlS.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing-emprendedores2/assets/index-Q7pYDQnx.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#" class="logo">Emprende</a>
+            <ul class="nav__links">
+                    <li><a class="nav-link" href="#recursos">Recursos</a></li>
+                    <li><a class="nav-link" href="#comunidad">Comunidad</a></li>
+                    <li><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav__toggle" id="menuBtn">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="titulo">Convierte tu idea en un negocio exitoso</h1>
+            <p class="subtitulo">Guías, plantillas y recursos prácticos para emprendedores.</p>
+            <a href="#recursos" class="btn">Explorar Recursos</a>
+            <video autoplay loop
+            muted playsinline class="video-hero" width="100%" controls>
+                <source src="/landing-emprendedores2/assets/recursos-C7_FwplH.webm" type="video/webm">
+                <source src="/landing-emprendedores2/assets/recursos-D4CrpNGN.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+
+
+            </video>
+        </section>
+        <section class="recursos" id="recursos">
+            <h2>Recursos para Emprendedores</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="cara front">
+                        
+                        <div class="titulo-card">
+                            <h3>Plan de Negocios</h3>
+                        </div>
+                        <div class="titulo2-card">
+                            <p ><span>El mapa de tu negocio</span></p>
+                            <video class="video-card" controls 
+                            autoplay muted loop 
+                            width="100%">
+                                <source src="/landing-emprendedores2/assets/planDeNegocios-C_V2VTMv.webm" type="video/webm">
+                                <source src="/landing-emprendedores2/assets/planDeNegocios-BGyDtg2l.mp4" type="video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>   
+                        </div> 
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="cara front">
+                        <div class="titulo-card">
+                            <h3>Finanzas</h3>
+                        </div>
+                        <div class="titulo2-card">
+                        <p >Controla tu dinero</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="cara front">
+                        <div class="titulo-card">
+                            <h3>Marketing</h3>
+                        </div>
+                        <div class="titulo2-card">
+                            <p >Consigue clientes</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="scroll-indicator">🢃</section>
+        <section class="comunidad" id="comunidad">
+            <h2 class ="titulo">Únete a nuestra Comunidad</h2>
+            <p class="subtitulo">Conecta con otros emprendedores, comparte experiencias y aprende de los mejores.</p>
+            <a href="#" class="btn">Unirse a la Comunidad</a>
+        </section>
+        <section class="contacto" id="contacto">
+            <h2 class="titulo">Contacto</h2>
+            <p class="subtitulo">¿Tienes preguntas o sugerencias? ¡Nos encantaría saber de ti!</p>
+            <form id="formulario">
+                <input class="inputNombre" name="nombre" placeholder="Nombre" required>
+                <input class="inputEmail" name="correo" type="email" placeholder="Correo" required>
+                <select class="inputPlan" name="plan">
+                    <option value="gratis"> Gratis</option>
+                    <option value="emprendedor">Emprendedor</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+                <button class="btnEnviar" type="submit">Registrarme</button>
+            </form>
+            <p id="error" style="color:red"></p>
+            <ul id="lista-contactos"></ul>
+             <button id="guardar">Descargar contactos (JSON)</button>
+        </section>
+       
+    </main>
+    <footer class="site-footer" id="contacto">
+        <p>&copy; 2023 Emprende. Todos los derechos reservados <span> Aaron Salguero</span>.</p>
+    </footer>
+</body>
+</html>
