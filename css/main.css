@@ -159,7 +159,7 @@ body {
 
 .inputNombre,
 .inputEmail,
-.inputMensaje, .inputPhone {
+.inputPlan, .inputPhone {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -183,7 +183,21 @@ body {
 } 
 .inputNombre:focus,
 .inputEmail:focus,
-.inputMensaje:focus {
+.inputPhone:focus {
   outline: none;
   border-color: #ff5c39;
+}
+#guardar {
+  background-color: #bbbbbb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+#guardar:hover{
+  background-color: #ff5c39;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }

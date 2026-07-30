@@ -85,13 +85,21 @@
         <section class="contacto" id="contacto">
             <h2 class="titulo">Contacto</h2>
             <p class="subtitulo">¿Tienes preguntas o sugerencias? ¡Nos encantaría saber de ti!</p>
-            <form action="#" method="post" class="contact-form">
-                <input class="inputNombre" type="text" name="nombre" placeholder="Nombre" required>
-                <input class="inputEmail" type="email" name="email" placeholder="Correo Electrónico" required>
-                <input class="inputPhone" type="tel" name="telefono" placeholder="Teléfono de Contacto" required>
-                <textarea class="inputMensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-                <button class="btnEnviar"type="submit">Enviar</button>
+            <form id="formulario">
+                <input class="inputNombre" name="nombre" placeholder="Nombre" required>
+                <input class="inputEmail" name="correo" type="email" placeholder="Correo" required>
+                <select class="inputPlan" name="plan">
+                    <option value="gratis"> Gratis</option>
+                    <option value="emprendedor">Emprendedor</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+                <button class="btnEnviar" type="submit">Registrarme</button>
             </form>
+            <p id="error" style="color:red"></p>
+            <ul id="lista-contactos"></ul>
+             <button id="guardar">Descargar contactos (JSON)</button>
+        </section>
+       
     </main>
     <footer class="site-footer" id="contacto">
         <p>&copy; 2023 Emprende. Todos los derechos reservados <span> Aaron Salguero</span>.</p>
