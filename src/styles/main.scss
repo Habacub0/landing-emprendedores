@@ -1,0 +1,37 @@
+@use "sass:color";
+
+$color-primario: #065A82;
+$color-acento: #F2A65A;
+$color-texto: #2B3A45;
+$espaciado: 1rem;
+$radio: 8px;
+
+body {
+  font-family: system-ui, sans-serif;
+  color: $color-texto;
+  margin: 0;
+}
+
+.cta {
+  background: $color-primario;
+  color: white;
+  padding: $espaciado ($espaciado * 2);
+  border-radius: $radio;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: color.adjust($color-primario, $lightness: -10%);
+  }
+}
+
+.hero {
+  padding: ($espaciado * 4) $espaciado;
+  text-align: center;
+}
+
+.beneficios {
+  display: grid;
+  gap: $espaciado;
+  padding: ($espaciado * 2) $espaciado;
+}
