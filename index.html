@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emprende · Recursos para Emprendedores</title>
-
-    <script
-      type="module"
-      crossorigin
-      src="/landing-emprendedores/assets/index-Cxoo5zwG.js"
-    ></script>
     <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="stylesheet" href="css/efectos.css" />
   </head>
@@ -21,6 +15,7 @@
           <li><a class="nav-link" href="#recursos">Recursos</a></li>
           <li><a class="nav-link" href="#comunidad">Comunidad</a></li>
           <li><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li><a class="nav-link" href="#testimonios">Testimonios</a></li>
         </ul>
         <button class="nav__toggle" id="menuBtn">☰</button>
       </nav>
@@ -42,11 +37,11 @@
           controls
         >
           <source
-            src="/landing-emprendedores/assets/recursos-C7_FwplH.webm"
+            src="media/planDeNegocios.webm"
             type="video/webm"
           />
           <source
-            src="/landing-emprendedores/assets/recursos-D4CrpNGN.mp4"
+            src="media/planDeNegocios.mp4" 
             type="video/mp4"
           />
           Tu navegador no soporta la etiqueta de video.
@@ -71,11 +66,11 @@
                   width="100%"
                 >
                   <source
-                    src="/landing-emprendedores/assets/planDeNegocios-C_V2VTMv.webm"
+                    src="media/recursos.webm"
                     type="video/webm"
                   />
                   <source
-                    src="/landing-emprendedores/assets/planDeNegocios-BGyDtg2l.mp4"
+                    src="media/recursos.mp4"
                     type="video/mp4"
                   />
                   Tu navegador no soporta la etiqueta de video.
@@ -114,9 +109,11 @@
         </p>
         <a href="#" class="btn">Unirse a la Comunidad</a>
       </section>
-      <section id="testimonios" class="testimonios">
-        <h2>Testimonios</h2>
-        <p>Lo que dicen nuestros usuarios</p>
+      <section class="tarjetaTestimonios">
+      <h2>Testimonios</h2>
+        <p>Lo que dicen nuestros usuarios:</p>
+      <section id="testimonios" class="testimonios"> 
+      </section>
       </section>
       <!-- <section class="contacto" id="contacto">
             <h2 class="titulo">Contacto</h2>
@@ -139,23 +136,23 @@
         <p
           id="error"
           style="color: red; font-weight: bold; min-height: 20px"></p>
-        <form id="formulario">
+        <form id="formulario" class="contact-form">
           <div>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" />
+            <input class="inputNombre" type="text" id="nombre" name="nombre" />
           </div>
           <div>
             <label for="correo">Correo:</label>
-            <input type="text" id="correo" name="correo" />
+            <input class="inputEmail" type="text" id="correo" name="correo" />
           </div>
           <div>
             <label for="plan">Plan:</label>
-            <select id="plan" name="plan">
+            <select class="inputPlan" id="plan" name="plan">
               <option value="básico">Básico</option>
               <option value="premium">Premium</option>
             </select>
           </div>
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btnEnviar">Enviar</button>
         </form>
       </section>
     </main>
